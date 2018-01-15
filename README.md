@@ -55,7 +55,7 @@ Build steps
 libsecp256k1 is built using autotools:
 
     $ ./autogen.sh
-    $ ./configure
+    $ ./configure  '--with-pic' '--with-bignum=no' '--enable-module-recovery' 
     $ make
     $ ./tests
     $ sudo make install  # optional
